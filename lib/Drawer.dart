@@ -9,8 +9,6 @@ class Drawerbar extends StatefulWidget{
   Drawerbar(this.st,this.faculty);
 @override
 _DrawerbarState createState() => _DrawerbarState(st,faculty);
-
- 
 }
 class _DrawerbarState extends State<Drawerbar>{
   Student st;
