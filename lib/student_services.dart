@@ -14,8 +14,6 @@ Future <Student> loadStudent() async {
   Student student = new Student.fromJson(jsonResponse);
   return student;
 }
-
-
 Future<String> _loadclassdataAsset() async{
   return await rootBundle.loadString('data/class.json');
 }
@@ -31,7 +29,7 @@ Future <List<Faculty>> loadclassdata() async{
 Future  loadclassdata() async{
   String s = await _loadclassdataAsset();
   List decoded = (jsonDecode(s) as List).map((data) => data).toList();
-  print(decoded);
+ 
   //Faculty teacher = new Faculty.fromJson(response);
    return decoded;
 }
